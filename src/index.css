@@ -1,13 +1,58 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  font-size: 62.5%; /*Reser para REMS  62.5 = 10px de 16px*/
+  box-sizing: border-box;/*Permite delimitar el tamaño que le estableces a un objeto, para que el padding no tome mas tamaño*/
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*, *:before, *:after {   
+  box-sizing: inherit;/*Permite delimitar el tamaño que le estableces a un objeto, para que el padding no tome mas tamaño*/
 }
+
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  padding: 5rem;
+}
+
+.buscador {
+  color: gray;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.categoria{
+  font-size: 2rem;
+}
+
+.card-grid {
+  background-color: #e4e7ed;
+  border: 1px solid #c8d3e6;
+  border-radius: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid grey;
+  border-radius: .5rem;
+  margin: 1rem 1rem;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.card img {
+  max-height: 12rem;
+}
+
+.card p {
+  font-size: 1.5rem;
+  margin: 1rem 0 0 0;
+}
+
