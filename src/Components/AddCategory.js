@@ -22,6 +22,7 @@ export const AddCategory = ({setCategorias}) => {
 
     return (
         <form onSubmit = {handleSubmit}>
+            <p>{inputValue}</p>
             <input 
                 className = 'buscador'
                 type = 'text'
@@ -30,8 +31,8 @@ export const AddCategory = ({setCategorias}) => {
                 />
         </form>
     );
-}
+};
 
 AddCategory.propTypes = {
     setCategorias: PropTypes.func.isRequired,
-}
+};
